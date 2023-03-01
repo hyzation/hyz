@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            ". wise . . . ."
+            ". logic . . . ."
+            ". . . . . ."
+            ". . . . ss .";
+    }
+
+    .logic {
+        grid-area: logic;
+    }
+
+    .wise {
+        grid-area: wise;
+    }
+
+    .hh {
+        grid-area: ss;
+    }
+
+    .container div {
+        height: 100px;
+        background-color: antiquewhite;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="logic"></div>
+        <div class="wise"></div>
+        <div class="hh"></div>
+    </div>
+</body>
+
+<script>
+
+
+</script>
+
+</html>
